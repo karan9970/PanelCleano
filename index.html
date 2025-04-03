@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Panel Cleano - Professional Solar Panel Cleaning Services">
+      <title>Panel Cleano</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+      <script>
+          document.addEventListener("DOMContentLoaded", function() {
+              document.querySelectorAll('.navbar a').forEach(anchor => {
+                  anchor.addEventListener('click', function(e) {
+                      e.preventDefault();
+                      const targetId = this.getAttribute('href').substring(1);
+                      document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+                  });
+              });
+          });
+      </script>
+  </head>
+  <body>
+      <div class="header">
+          <img src="images/png logo.png" alt="Panel Cleano Logo" class="logo">
+          <h1>Panel Cleano</h1>
+      </div>
+      <div class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#reviews">Client Reviews</a>
+          <a href="#contact">Contact</a>
+      </div>
+      <div class="carousel">
+          <img src="images/solar2.jpg" class="active">
+          <img src="images/solar3.jpg">
+          <img src="images/solar4.jpg">
+          <img src="images/solar5.jpg">
+      </div>
+      <div class="container">
+          <h2 id="services">Our Services</h2>
+          <div class="cards">
+              <div class="card">
+                  <img src="images/professional solar.jpg" alt="Service 1" width="100%">
+                  <p>Professional Solar Panel Cleaning</p>
+              </div>
+              <div class="card">
+                  <img src="images/maintainance and service.jpg" alt="Service 2" width="100%">
+                  <p>Maintenance & Inspection</p>
+              </div>
+              <div class="card">
+                  <img src="images/water free cleaning.jpg" alt="Service 3" width="100%">
+                  <p>Water-Free Cleaning Solutions</p>
+              </div>
+          </div>
+          
+          <h2 id="reviews">Client Reviews</h2>
+          <div class="cards">
+              <div class="review-card">
+                  <p><strong>Roshan Patil</strong></p>
+                  <p class="stars">★★★★★</p>
+                  <p>"Panel Cleano made my solar panels shine like new! Great service."</p>
+              </div>
+              <div class="review-card">
+                  <p><strong>Karan Desai</strong></p>
+                  <p class="stars">★★★★☆</p>
+                  <p>"Highly recommend their professional cleaning service!"</p>
+              </div>
+              <div class="review-card">
+                  <p><strong>Rahul Sharma</strong></p>
+                  <p class="stars">★★★★☆</p>
+                  <p>"Panel Cleano did an outstanding job! My solar panels are now spotless, and I can already see an improvement in energy efficiency. Highly recommended!"</p>
+              </div>
+              <div class="review-card">
+                  <p><strong>Sumiti Malhotra</strong></p>
+                  <p class="stars">★★★★☆</p>
+                  <p>"I was skeptical at first, but after the cleaning, I saw a noticeable increase in my solar output. Will definitely use their service again!"</p>
+              </div>
+          </div>
+      </div>
+      
+      <div class="footer" style="width: 100%; text-align: center; padding: 20px 0; background: #333; color: white;">
+          <div class="footer-section" id="about">
+              <h3>About Us</h3>
+              <p>Panel Cleano is dedicated to providing professional solar panel cleaning services to maximize efficiency and lifespan. Our expert team ensures your solar panels stay spotless for optimal energy production.</p>
+          </div>
+          <div class="footer-section" id="contact">
+              <h3>Contact Us</h3>
+              <p>Email: support@panelcleano.com</p>
+              <p>Phone: +91 7709201377</p>
+              <p>Address: Placeholder Address, City, Country</p>
+          </div>
+      </div>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <a href="https://api.whatsapp.com/send?phone=917709201377&text=Hello%21%20Would%20m%C3%A1s%20likemore%C3%B3n%20information%20Aboutourservice%202." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a> -->
+    <a href="https://api.whatsapp.com/send?phone=917709201377&text=Hello%21%20I%20would%20like%20more%20information%20about%20PanelCleano%202." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    
+  </body>
+  </html>
+  
