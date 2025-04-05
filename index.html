@@ -1,104 +1,218 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Panel Cleano - Professional Solar Panel Cleaning Services">
-      <title>Panel Cleano</title>
-      <link rel="stylesheet" href="style.css">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-      <script>
-          document.addEventListener("DOMContentLoaded", function() {
-              document.querySelectorAll('.navbar a').forEach(anchor => {
-                  anchor.addEventListener('click', function(e) {
-                      e.preventDefault();
-                      const targetId = this.getAttribute('href').substring(1);
-                      document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-                  });
-              });
-          });
-      </script>
-  </head>
-  <body>
-      <div class="header">
-          <img src="images/png logo.png" alt="Panel Cleano Logo" class="logo">
-          <h1>Panel Cleano</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel Cleano</title>
+  <meta name="description" content="Boost your solar panel performance with expert cleaning services from Panel Cleano. Affordable, reliable, and eco-friendly." />
+  <meta name="keywords" content="solar panel cleaning, solar maintenance, clean solar panels, Panel Cleano" />
+  <meta name="author" content="Panel Cleano" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Panel Cleano - Solar Panel Cleaning Experts" />
+  <meta property="og:description" content="Professional solar panel cleaning to improve efficiency and lower your energy bills." />
+  <meta property="og:image" content="https://your-domain.com/images/solar-cleaning.jpg" />
+  <meta property="og:url" content="https://panelcleano.onrender.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Panel Cleano - Solar Panel Cleaning Experts" />
+  <meta name="twitter:description" content="Eco-friendly and efficient solar panel cleaning services." />
+  <meta name="twitter:image" content="https://panelcleano.onrender.com/images/solar-cleaning.jpg" />
+
+  <link rel="canonical" href="https://panelcleano.onrender.com/" />
+  <link rel="stylesheet" href="rstyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar-brand img {
+      max-height: 40px;
+      margin-right: 10px;
+    }
+    section {
+      padding: 100px 0;
+    }
+
+    .float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      transition: transform 0.3s ease;
+    }
+
+    .float:hover {
+      transform: scale(1.1);
+      color: white;
+      text-decoration: none;
+    }
+
+    .my-float {
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="assets/images/png logo.png" alt="Logo" />
+        <span class="fw-bold">Panel Cleano</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Client Reviews</a></li>
+        </ul>
       </div>
-      <div class="navbar">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#reviews">Client Reviews</a>
-          <a href="#contact">Contact</a>
-      </div>
-      <div class="carousel">
-          <img src="images/solar2.jpg" class="active">
-          <img src="images/solar3.jpg">
-          <img src="images/solar4.jpg">
-          <img src="images/solar5.jpg">
-      </div>
-      <div class="container">
-          <h2 id="services">Our Services</h2>
-          <div class="cards">
-              <div class="card">
-                  <img src="images/professional solar.jpg" alt="Service 1" width="100%">
-                  <p>Professional Solar Panel Cleaning</p>
+    </div>
+  </nav>
+
+  <!-- Sections -->
+    <section id="home" class="hero bg-light text-center py-5">
+    <section id="why-choose-us" class="py-5 bg-light">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-4">Why Choose Us?</h2>
+          <div class="row align-items-center">
+            
+            <!-- Video on Large Screens -->
+           
+            <div class="col-lg-6 mb-4">
+              <div class="ratio ratio-16x9">
+                <iframe 
+                  src="https://www.youtube.com/embed/Jv0PHQRh5Hw"
+                  title="Why Choose Us - Panel Cleano"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
               </div>
-              <div class="card">
-                  <img src="images/maintainance and service.jpg" alt="Service 2" width="100%">
-                  <p>Maintenance & Inspection</p>
-              </div>
-              <div class="card">
-                  <img src="images/water free cleaning.jpg" alt="Service 3" width="100%">
-                  <p>Water-Free Cleaning Solutions</p>
-              </div>
-          </div>
-          
-          <h2 id="reviews">Client Reviews</h2>
-          <div class="cards">
-              <div class="review-card">
-                  <p><strong>Roshan Patil</strong></p>
-                  <p class="stars">★★★★★</p>
-                  <p>"Panel Cleano made my solar panels shine like new! Great service."</p>
-              </div>
-              <div class="review-card">
-                  <p><strong>Karan Desai</strong></p>
-                  <p class="stars">★★★★☆</p>
-                  <p>"Highly recommend their professional cleaning service!"</p>
-              </div>
-              <div class="review-card">
-                  <p><strong>Rahul Sharma</strong></p>
-                  <p class="stars">★★★★☆</p>
-                  <p>"Panel Cleano did an outstanding job! My solar panels are now spotless, and I can already see an improvement in energy efficiency. Highly recommended!"</p>
-              </div>
-              <div class="review-card">
-                  <p><strong>Sumiti Malhotra</strong></p>
-                  <p class="stars">★★★★☆</p>
-                  <p>"I was skeptical at first, but after the cleaning, I saw a noticeable increase in my solar output. Will definitely use their service again!"</p>
-              </div>
-          </div>
-      </div>
+            </div>
+            
       
-      <div class="footer" style="width: 100%; text-align: center; padding: 20px 0; background: #333; color: white;">
-          <div class="footer-section" id="about">
-              <h3>About Us</h3>
-              <p>Panel Cleano is dedicated to providing professional solar panel cleaning services to maximize efficiency and lifespan. Our expert team ensures your solar panels stay spotless for optimal energy production.</p>
+            <!-- Text Content -->
+            <div class="col-lg-6 text-start">
+              <h3 class="fw-semibold">Cleaner Panels, Maximum Efficiency</h3>
+              <p>
+                Your solar panels lose efficiency due to dirt and dust.  
+                We help you maintain their <strong>maximum performance</strong> with **professional cleaning services**.
+              </p>
+      
+              <h5 class="fw-bold mt-3">What Makes Us the Best?</h5>
+              <ul class="list-unstyled">
+                <li><i class="fa fa-bolt text-primary"></i> <strong>30% More Efficiency:</strong> Get the best energy output</li>
+                <li><i class="fa fa-leaf text-success"></i> <strong>Eco-Friendly Cleaning:</strong> Safe for panels & the environment</li>
+                <li><i class="fa fa-clock text-warning"></i> <strong>Quick & Reliable:</strong> We value your time</li>
+                <li><i class="fa fa-thumbs-up text-info"></i> <strong>Trusted by Many:</strong> Satisfied customers across the region</li>
+              </ul>
+              
+      
+              <a href="tel:+917709201377" class="btn btn-primary mt-3">Get in touch with us</a>
+            </div>
+      
           </div>
-          <div class="footer-section" id="contact">
-              <h3>Contact Us</h3>
-              <p>Email: support@panelcleano.com</p>
-              <p>Phone: +91 7709201377</p>
-              <p>Address: Placeholder Address, City, Country</p>
+        </div>
+      </section>      
+    <div class="carousel slide" id="carouselExample" data-bs-ride="carousel">
+
+  <section id="services" class="container my-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <img src="assets/images/rimg/dirty to clean.webp" class="card-img-top" alt="Service 1">
+          <div class="card-body">
+            <h5 class="card-title">Solar Panel Cleaning</h5>
+            <p class="card-text">Keep your panels clean and efficient with our expert service.</p>
           </div>
+        </div>
       </div>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <!-- <a href="https://api.whatsapp.com/send?phone=917709201377&text=Hello%21%20Would%20m%C3%A1s%20likemore%C3%B3n%20information%20Aboutourservice%202." class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-    </a> -->
-    <a href="https://api.whatsapp.com/send?phone=917709201377&text=Hello%21%20I%20would%20like%20more%20information%20about%20PanelCleano%202." class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-    </a>
-    
-  </body>
-  </html>
-  
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <img src="assets/images/maintainance and service.jpg" class="card-img-top" alt="Service 2">
+          <div class="card-body">
+            <h5 class="card-title">Maintenance Checks</h5>
+            <p class="card-text">We provide regular inspection & maintenance for optimal performance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center">
+          <img src="assets/images/maintainance and service2.jpg" class="card-img-top" alt="Service 3">
+          <div class="card-body">
+            <h5 class="card-title">Performance Monitoring</h5>
+            <p class="card-text">Track and analyze your panel performance with our smart tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section id="about" class="py-5 bg-white">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-4">About Us</h2>
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+              <img src="assets/images/rimg/roshan clean.jpg" class="img-fluid rounded shadow" alt="Solar Panel Cleaning">
+            </div>
+            <div class="col-lg-6 text-start">
+              <h3 class="fw-semibold">The Panel Cleano Story</h3>
+              <p>
+                At <strong>Panel Cleano</strong>, we believe that <em>every ray of sunshine counts.</em>  
+                Your solar panels work tirelessly, but dust and dirt reduce their efficiency.  
+                That’s where we come in—to make sure every panel shines and delivers maximum power!
+              </p>
+      
+              <h5 class="fw-bold mt-3">Why Choose Us?</h5>
+              <ul class="list-unstyled">
+                <li><i class="fa fa-check-circle text-success"></i> <strong>Boost Efficiency:</strong> Improve solar performance by up to <b>30%</b></li>
+                <li><i class="fa fa-check-circle text-success"></i> <strong>Eco-Friendly:</strong> We use <b>non-toxic</b>, water-efficient cleaning solutions</li>
+                <li><i class="fa fa-check-circle text-success"></i> <strong>Hassle-Free:</strong> Quick, reliable service with 100% satisfaction</li>
+                <li><i class="fa fa-check-circle text-success"></i> <strong>Affordable Pricing:</strong> Get more power without breaking the bank</li>
+              </ul>
+      
+              <h5 class="fw-bold mt-3">🌍 Our Commitment</h5>
+              <p>
+                We’re not just about cleaning—we’re about <strong>sustainability</strong>.  
+                Clean panels mean <b>lower bills, more energy, and a greener planet.</b>  
+                Let’s help you make the most of your solar investment!
+              </p>
+      
+              <a href="tel:+917709201377" class="btn btn-primary mt-3">Call Now for Free Consultation</a>
+            </div>
+          </div>
+        </div>
+      </section>  
+
+  <!-- WhatsApp Floating Button -->
+
+  <a href="https://api.whatsapp.com/send?phone=917709201377&text=Hello%21%20I%20would%20like%20more%20information%20about%20PanelCleano%20" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
