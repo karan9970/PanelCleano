@@ -211,19 +211,21 @@
       </section>
 
 
-      <div class="container py-5">
-  <div class="row align-items-center justify-content-center">
+     <div class="container py-5">
+  <div class="row align-items-center justify-content-center min-vh-100">
+    
     <!-- Image Column -->
-    <div class="col-md-6 mb-4 mb-md-0 text-center">
-      <img src="\images\after clean before clean.jpg" alt="Review Illustration" class="img-fluid rounded shadow" style="max-height: 400px;" />
+    <div class="col-lg-6 mb-4 mb-lg-0 text-center">
+      <img src="images/after clean before clean.jpg" alt="Review" class="img-fluid rounded shadow" style="max-height: 400px;" />
     </div>
 
     <!-- Form Column -->
-    <div class="col-md-6">
+    <div class="col-lg-6">
       <form
         action="https://formsubmit.co/panelcleano@gmail.com"
         method="POST"
         class="p-4 rounded shadow bg-white"
+        style="width: 100%; max-width: 500px; margin: auto;"
       >
         <h3 class="mb-4 text-center">Leave a Review</h3>
 
@@ -263,16 +265,17 @@
           ></textarea>
         </div>
 
+        <!-- Optional: disable CAPTCHA -->
         <input type="hidden" name="_captcha" value="false" />
+        <!-- Optional: redirect after success -->
         <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html" /> -->
 
         <button type="submit" class="btn btn-primary w-100">Submit Review</button>
       </form>
     </div>
+
   </div>
 </div>
-
-
 
       
       
